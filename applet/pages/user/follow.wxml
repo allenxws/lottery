@@ -1,0 +1,54 @@
+<!--pages/user/user.wxml-->
+<view class="page">
+    <view class="lotteryItemContainer">
+      <view class="lotteryItemTop">
+        <text class="lotteryTypeText">双色球</text>
+        <text class="lotteryPeriodNumber">第2017047期</text>
+        <text class="lotteryFollowStatus">已关注</text>
+        <text class="lotteryDetailIcon">icon</text>
+      </view>
+      <view class="lotteryItemButtom"></view>
+    </view>
+    <view class="lotteryContainerSeperator"></view>
+    <view class="lotteryItemContainer">
+      <view class="lotteryItemTop">
+        <text class="lotteryTypeText">双色球</text>
+        <text class="lotteryPeriodNumber">第2017047期</text>
+        <text class="lotteryFollowStatus">已关注</text>
+        <text class="lotteryDetailIcon">icon</text>
+      </view>
+      <view class="lotteryItemButtom"></view>
+    </view>
+    <view class="lotteryContainerSeperator"></view>
+    <view class="lotteryItemContainer">
+      <view class="lotteryItemTop">
+        <text class="lotteryTypeText">双色球</text>
+        <text class="lotteryPeriodNumber">第2017047期</text>
+        <text class="lotteryFollowStatus">已关注</text>
+        <text class="lotteryDetailIcon">icon</text>
+      </view>
+      <view class="lotteryItemButtom"></view>
+    </view>
+    <view class="lotteryContainerSeperator"></view>
+    <view class="lotteryItemContainer">
+      <view class="lotteryItemTop">
+        <text class="lotteryTypeText">双色球</text>
+        <text class="lotteryPeriodNumber">第2017047期</text>
+        <text class="lotteryFollowStatus">已关注</text>
+        <text class="lotteryDetailIcon">icon</text>
+      </view>
+      <view class="lotteryItemButtom"></view>
+    </view>
+    <view class="lotteryContainerSeperator"></view>
+    <view class="lotteryItemContainer">
+      <view class="lotteryItemTop">
+        <text class="lotteryTypeText">双色球</text>
+        <text class="lotteryPeriodNumber">第2017047期</text>
+        <text class="lotteryFollowStatus">已关注</text>
+        <text class="lotteryDetailIcon">icon</text>
+      </view>
+      <view class="lotteryItemButtom"></view>
+    </view>
+</view>
+
+

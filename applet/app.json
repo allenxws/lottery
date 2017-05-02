@@ -1,0 +1,30 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/user/follow"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#d9002f",
+    "navigationBarTitleText": "开奖结果",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": false
+  },
+   "tabBar": {
+    "color": "#6e6d6b",
+    "selectedColor": "#dd2727",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath":"images/icon-home.png",
+      "selectedIconPath":"images/icon-home-active.png",
+      "text": "开奖结果"
+    }, {
+      "pagePath": "pages/user/follow",
+      "iconPath":"images/icon-cart.png",
+      "selectedIconPath":"images/icon-cart-active.png",
+      "text": "我关注的"
+    }]
+  }
+}

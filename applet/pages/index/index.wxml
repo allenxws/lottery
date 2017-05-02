@@ -1,0 +1,116 @@
+
+<!--index.wxml-->
+<view class="page">
+    <view class="swiperTab">
+        <view class="swiperTabItem {{clickedItemNum==0 ? 'clickedSwiperItem' : ''}}" data-itemnumber="0" bindtap="onSwiperClick">福利彩票</view>
+        <view class="swiperTabItem {{clickedItemNum==1 ? 'clickedSwiperItem' : ''}}" data-itemnumber="1" bindtap="onSwiperClick">体育彩票</view>
+    </view>
+</view>
+
+<swiper current="{{clickedItemNum}}" duration="300" bindchange="onSwiperSlide" class="swiperItemContainer">
+  <swiper-item>
+    <view class="tabContainerSeperator"></view>
+    <view class="lotteryItemContainer">
+      <view class="lotteryItemTop">
+        <text class="lotteryTypeText">双色球</text>
+        <text class="lotteryPeriodNumber">第2017047期</text>
+        <text class="lotteryFollowStatus">已关注</text>
+        <text class="lotteryDetailIcon">icon</text>
+      </view>
+      <view class="lotteryItemButtom"></view>
+    </view>
+    <view class="lotteryContainerSeperator"></view>
+    <view class="lotteryItemContainer">
+      <view class="lotteryItemTop">
+        <text class="lotteryTypeText">双色球</text>
+        <text class="lotteryPeriodNumber">第2017047期</text>
+        <text class="lotteryFollowStatus">已关注</text>
+        <text class="lotteryDetailIcon">icon</text>
+      </view>
+      <view class="lotteryItemButtom"></view>
+    </view>
+    <view class="lotteryContainerSeperator"></view>
+    <view class="lotteryItemContainer">
+      <view class="lotteryItemTop">
+        <text class="lotteryTypeText">双色球</text>
+        <text class="lotteryPeriodNumber">第2017047期</text>
+        <text class="lotteryFollowStatus">已关注</text>
+        <text class="lotteryDetailIcon">icon</text>
+      </view>
+      <view class="lotteryItemButtom"></view>
+    </view>
+    <view class="lotteryContainerSeperator"></view>
+    <view class="lotteryItemContainer">
+      <view class="lotteryItemTop">
+        <text class="lotteryTypeText">双色球</text>
+        <text class="lotteryPeriodNumber">第2017047期</text>
+        <text class="lotteryFollowStatus">已关注</text>
+        <text class="lotteryDetailIcon">icon</text>
+      </view>
+      <view class="lotteryItemButtom"></view>
+    </view>
+    <view class="lotteryContainerSeperator"></view>
+    <view class="lotteryItemContainer">
+      <view class="lotteryItemTop">
+        <text class="lotteryTypeText">双色球</text>
+        <text class="lotteryPeriodNumber">第2017047期</text>
+        <text class="lotteryFollowStatus">已关注</text>
+        <text class="lotteryDetailIcon">icon</text>
+      </view>
+      <view class="lotteryItemButtom"></view>
+    </view>
+  </swiper-item>
+
+  <swiper-item>
+    <view class="tabContainerSeperator"></view>
+     <view class="lotteryItemContainer">
+      <view class="lotteryItemTop">
+        <text class="lotteryTypeText">双色球</text>
+        <text class="lotteryPeriodNumber">第2017047期</text>
+        <text class="lotteryFollowStatus">已关注</text>
+        <text class="lotteryDetailIcon">icon</text>
+      </view>
+      <view class="lotteryItemButtom"></view>
+    </view>
+    <view class="lotteryContainerSeperator"></view>
+    <view class="lotteryItemContainer">
+      <view class="lotteryItemTop">
+        <text class="lotteryTypeText">双色球</text>
+        <text class="lotteryPeriodNumber">第2017047期</text>
+        <text class="lotteryFollowStatus">已关注</text>
+        <text class="lotteryDetailIcon">icon</text>
+      </view>
+      <view class="lotteryItemButtom"></view>
+    </view>
+    <view class="lotteryContainerSeperator"></view>
+    <view class="lotteryItemContainer">
+      <view class="lotteryItemTop">
+        <text class="lotteryTypeText">双色球</text>
+        <text class="lotteryPeriodNumber">第2017047期</text>
+        <text class="lotteryFollowStatus">已关注</text>
+        <text class="lotteryDetailIcon">icon</text>
+      </view>
+      <view class="lotteryItemButtom"></view>
+    </view>
+    <view class="lotteryContainerSeperator"></view>
+    <view class="lotteryItemContainer">
+      <view class="lotteryItemTop">
+        <text class="lotteryTypeText">双色球</text>
+        <text class="lotteryPeriodNumber">第2017047期</text>
+        <text class="lotteryFollowStatus">已关注</text>
+        <text class="lotteryDetailIcon">icon</text>
+      </view>
+      <view class="lotteryItemButtom"></view>
+    </view>
+    <view class="lotteryContainerSeperator"></view>
+    <view class="lotteryItemContainer">
+      <view class="lotteryItemTop">
+        <text class="lotteryTypeText">双色球</text>
+        <text class="lotteryPeriodNumber">第2017047期</text>
+        <text class="lotteryFollowStatus">已关注</text>
+        <text class="lotteryDetailIcon">icon</text>
+      </view>
+      <view class="lotteryItemButtom"></view>
+    </view>
+  </swiper-item>
+</swiper>

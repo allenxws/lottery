@@ -1,0 +1,47 @@
+/**app.wxss**/
+page{  background: #eee;}
+
+.lotteryItemContainer{
+    height: 150rpx;
+    background-color: white;
+}
+
+.lotteryItemTop{
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-left: 2%;
+    height: 20%;
+    font-size: 70%;
+}
+
+.lotteryItemButtom{
+    height: 90%;
+}
+
+.lotteryTypeText{
+    width: 30%;
+    color: deepskyblue;
+}
+
+.lotteryPeriodNumber{
+    margin-left: 10%;
+    width: 30%;
+}
+
+.lotteryFollowStatus{
+    margin-left: 1%;
+    background-color: #d4d0d0;
+    border-radius:3px;
+    color: white;
+    width: 30%;
+    text-align: center;
+}
+
+.lotteryDetailIcon{
+    width: 10%;
+    float: right;
+}
+
+.lotteryContainerSeperator{
+    height: 5rpx;
+}

@@ -1,0 +1,28 @@
+/**index.wxss**/
+.swiperTab{  
+    width: 100%;
+    text-align: center;  
+    line-height: 80rpx;
+    background-color: white;
+}
+
+.swiperTabItem{
+    font-family: serif;
+    font-size: 31rpx;
+    display: inline-block;  
+    width: 50%;  
+    color: black;
+}
+
+.clickedSwiperItem{
+    color: #da7c0c;  
+    border-bottom: 5rpx solid #da7c0c;
+}
+
+.swiperItemContainer{
+    height: 2000rpx;
+}
+
+.tabContainerSeperator{
+    height: 10rpx;
+}
