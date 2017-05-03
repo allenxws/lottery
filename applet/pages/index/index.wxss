@@ -26,3 +26,18 @@
 .tabContainerSeperator{
     height: 10rpx;
 }
+.toptab-icon{
+    width:30px;
+    height:30px;
+    margin-top: 5%;
+}
+.outer-toptab-icon{
+    width: 50%;
+    float: left;
+    margin-right: -20%;
+}
+
+.outer-toptab-text{
+    width: 50%;
+    float: left;
+}

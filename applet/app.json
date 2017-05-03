@@ -11,19 +11,19 @@
     "enablePullDownRefresh": false
   },
    "tabBar": {
-    "color": "#6e6d6b",
-    "selectedColor": "#dd2727",
+    "color": "#E4E4E4",
+    "selectedColor": "#FF6666",
     "borderStyle": "white",
     "backgroundColor": "#fff",
     "list": [{
       "pagePath": "pages/index/index",
-      "iconPath":"images/icon-home.png",
-      "selectedIconPath":"images/icon-home-active.png",
+      "iconPath":"images/kaijiang-noselect.png",
+      "selectedIconPath":"images/kaijiang.png",
       "text": "开奖结果"
     }, {
       "pagePath": "pages/user/follow",
-      "iconPath":"images/icon-cart.png",
-      "selectedIconPath":"images/icon-cart-active.png",
+      "iconPath":"images/attention-noselect.png",
+      "selectedIconPath":"images/attention.png",
       "text": "我关注的"
     }]
   }
