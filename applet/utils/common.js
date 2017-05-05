@@ -1,5 +1,4 @@
 var app = getApp();
-var MD5Encode = require("MD5Encode.js");
 
 /**
  * 对字符串判空
@@ -14,13 +13,13 @@ function isStringEmpty(data) {
 /**
  * 封装网络请求
  */
-function sentHttpRequestToServer(uri, data, method, successCallback, failCallback, completeCallback) {
+function sentHttpRequestToServer(url, data, method, successCallback, failCallback, completeCallback) {
     wx.request({
-        url: app.d.hostUrl + uri,
+        url: app.data.baseUrl + url,
         data: data,
         method: method,
         header: {
-            'Content-Type': 'application/x-www-form-urlencoded'
+            'Content-Type': 'application/json'
         },
         success: successCallback,
         fail: failCallback,
@@ -67,55 +66,13 @@ function toastFail(message){
 }
 
 /**
- * 调用微信支付
+ * 分割字符串变成数组,字符串以,分割
  */
-function doWechatPay(prepayId, successCallback, failCallback, completeCallback) {
-    console.log("enter do wechat pay method");
-    var nonceString = getRandomString();
-    var currentTimeStamp = getCurrentTimeStamp();
-    var packageName = "prepay_id=" + prepayId;
-    var dataMap = {
-        timeStamp : currentTimeStamp,
-        nonceStr : nonceString,
-        package : packageName,
-        signType : "MD5",
-        paySign : getWechatPaySign(nonceString, packageName, currentTimeStamp),
-        success : successCallback,
-        fail : failCallback,
-        complete : completeCallback
+function stringToArray(toSplit, seperator){
+    if ("" == toSplit || null == toSplit){
+        return "";
     }
-    console.log(dataMap);
-    wx.requestPayment(dataMap);
-}
-
-/**
- * 获取微信支付签名字符串
- */
-function getWechatPaySign(nonceStr, packageName, timeStamp){
-    var beforMD5 = "appid=" + app.d.appId + "&nonceStr=" + nonceStr + "&package=" + packageName + "&signType=MD5" + "&timeStamp=" + timeStamp + "&key=" + app.d.appKey;
-    return doMD5Encode(beforMD5).toUpperCase();
-}
-
-/**
- * 获取当前时间戳
- */
-function getCurrentTimeStamp() {
-    var timestamp = Date.parse(new Date());
-    return timestamp + "";
-}
-
-/**
- * 获取随机字符串，32位以下
- */
-function getRandomString() {
-    return Math.random().toString(36).substring(3, 8);
-}
-
-/**
- * MD5加密
- */
-function doMD5Encode(toEncode){
-    return MD5Encode.hexMD5(toEncode);
+    return toSplit.split(seperator);
 }
 
 module.exports = {
@@ -123,5 +80,5 @@ module.exports = {
     sentHttpRequestToServer: sentHttpRequestToServer,
     mapToJson: mapToJson,
     toastSuccess: toastSuccess,
-    doWechatPay: doWechatPay
+    stringToArray: stringToArray
 }

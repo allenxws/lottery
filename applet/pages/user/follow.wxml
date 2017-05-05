@@ -5,7 +5,7 @@
         <text class="lotteryTypeText">双色球</text>
         <text class="lotteryPeriodNumber">第2017047期</text>
         <text class="lotteryFollowStatus">已关注</text>
-        <text class="lotteryDetailIcon">icon</text>
+        <text class="lotteryDetailIcon">></text>
       </view>
       <view class="lotteryItemButtom"></view>
     </view>
@@ -15,7 +15,7 @@
         <text class="lotteryTypeText">双色球</text>
         <text class="lotteryPeriodNumber">第2017047期</text>
         <text class="lotteryFollowStatus">已关注</text>
-        <text class="lotteryDetailIcon">icon</text>
+        <text class="lotteryDetailIcon">></text>
       </view>
       <view class="lotteryItemButtom"></view>
     </view>
@@ -25,7 +25,7 @@
         <text class="lotteryTypeText">双色球</text>
         <text class="lotteryPeriodNumber">第2017047期</text>
         <text class="lotteryFollowStatus">已关注</text>
-        <text class="lotteryDetailIcon">icon</text>
+        <text class="lotteryDetailIcon">></text>
       </view>
       <view class="lotteryItemButtom"></view>
     </view>
@@ -35,7 +35,7 @@
         <text class="lotteryTypeText">双色球</text>
         <text class="lotteryPeriodNumber">第2017047期</text>
         <text class="lotteryFollowStatus">已关注</text>
-        <text class="lotteryDetailIcon">icon</text>
+        <text class="lotteryDetailIcon">></text>
       </view>
       <view class="lotteryItemButtom"></view>
     </view>
@@ -45,7 +45,7 @@
         <text class="lotteryTypeText">双色球</text>
         <text class="lotteryPeriodNumber">第2017047期</text>
         <text class="lotteryFollowStatus">已关注</text>
-        <text class="lotteryDetailIcon">icon</text>
+        <text class="lotteryDetailIcon">></text>
       </view>
       <view class="lotteryItemButtom"></view>
     </view>

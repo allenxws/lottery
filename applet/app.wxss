@@ -40,8 +40,52 @@ page{  background: #eee;}
 .lotteryDetailIcon{
     width: 10%;
     float: right;
+    margin-right: -5%;
 }
 
 .lotteryContainerSeperator{
     height: 5rpx;
+}
+
+.lotteryRedBall{
+    float: left;
+    width: 50rpx;
+    height: 50rpx;
+    text-align: center;
+    background: #FF6666;
+    color: white;
+    -moz-border-radius: 25rpx;
+    -webkit-border-radius: 25rpx;
+    border-radius: 25rpx;
+    margin-top: 4%;
+    margin-left: 3%;
+}
+
+.lotteryBlueBall{
+    float: left;
+    width: 50rpx;
+    height: 50rpx;
+    text-align: center;
+    color: white;
+    background: #169BD5;
+    -moz-border-radius: 25rpx;
+    -webkit-border-radius: 25rpx;
+    border-radius: 25rpx;
+    margin-top: 4%;
+    margin-left: 3%;
+    padding-top: 1rpx;
+}
+
+.lotteryYellowSquare {
+    float: left;
+    width: 37rpx;
+    height: 37rpx;
+    background: red;
+    font-size: 27rpx;
+    margin-top: 5%;
+    margin-left: 1%;
+    text-align: center;
+    color: #700505;
+    background: #d9a13b;
+    padding-top: 1%;
 }

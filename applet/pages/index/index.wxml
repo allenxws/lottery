@@ -1,122 +1,216 @@
 
 <!--index.wxml-->
 <view class="page">
-    <view class="swiperTab">
-        <view class="swiperTabItem {{clickedItemNum==0 ? 'clickedSwiperItem' : ''}}" data-itemnumber="0" bindtap="onSwiperClick">
-         <view class="outer-toptab-icon"> <image class="toptab-icon" src="/images/fuli.png"></image> </view>
-         <view class="outer-toptab-text"> <text>福利彩票</text></view>
-        </view>
-        <view class="swiperTabItem {{clickedItemNum==1 ? 'clickedSwiperItem' : ''}}" data-itemnumber="1" bindtap="onSwiperClick">
-        <view class="outer-toptab-icon"><image class="toptab-icon" src="/images/ticai.png"></image></view>
-        <view class="outer-toptab-text"> <text>体育彩票</text></view>
-        </view>
+  <view class="swiperTab">
+    <view class="swiperTabItem {{clickedItemNum==0 ? 'clickedSwiperItem' : ''}}" data-itemnumber="0" bindtap="onSwiperClick">
+      <view class="outer-toptab-icon">
+        <image class="toptab-icon" src="/images/fuli.png"></image>
+      </view>
+      <view class="outer-toptab-text">
+        <text>福利彩票</text>
+      </view>
     </view>
+    <view class="swiperTabItem {{clickedItemNum==1 ? 'clickedSwiperItem' : ''}}" data-itemnumber="1" bindtap="onSwiperClick">
+      <view class="outer-toptab-icon">
+        <image class="toptab-icon" src="/images/ticai.png"></image>
+      </view>
+      <view class="outer-toptab-text">
+        <text>体育彩票</text>
+      </view>
+    </view>
+  </view>
 </view>
-
 <swiper current="{{clickedItemNum}}" duration="300" bindchange="onSwiperSlide" class="swiperItemContainer">
   <swiper-item>
     <view class="tabContainerSeperator"></view>
     <view class="lotteryItemContainer">
       <view class="lotteryItemTop">
-        <text class="lotteryTypeText">双色球</text>
-        <text class="lotteryPeriodNumber">第2017047期</text>
+        <text class="lotteryTypeText">福彩3D</text>
+        <text class="lotteryPeriodNumber">第{{welfare3D.expect}}期</text>
         <text class="lotteryFollowStatus">已关注</text>
         <text class="lotteryDetailIcon">></text>
       </view>
-      <view class="lotteryItemButtom"></view>
+      <view class="lotteryItemButtom">
+        <text class="lotteryRedBall">{{welfare3D.opencode[0]}}</text>
+        <text class="lotteryRedBall">{{welfare3D.opencode[1]}}</text>
+        <text class="lotteryRedBall">{{welfare3D.opencode[2]}}</text>
+      </view>
+    </view>
+    <view class="lotteryContainerSeperator"></view>
+    <view class="lotteryItemContainer">
+      <view class="lotteryItemTop">
+        <text class="lotteryTypeText">七乐彩</text>
+        <text class="lotteryPeriodNumber">第{{sevenMusic.expect}}期</text>
+        <text class="lotteryFollowStatus">已关注</text>
+        <text class="lotteryDetailIcon">></text>
+      </view>
+      <view class="lotteryItemButtom">
+        <text class="lotteryRedBall">{{sevenMusic.opencode[0]}}</text>
+        <text class="lotteryRedBall">{{sevenMusic.opencode[1]}}</text>
+        <text class="lotteryRedBall">{{sevenMusic.opencode[2]}}</text>
+        <text class="lotteryRedBall">{{sevenMusic.opencode[3]}}</text>
+        <text class="lotteryRedBall">{{sevenMusic.opencode[4]}}</text>
+        <text class="lotteryRedBall">{{sevenMusic.opencode[5]}}</text>
+        <text class="lotteryRedBall">{{sevenMusic.opencode[6]}}</text>
+        <text class="lotteryBlueBall">{{sevenMusic.opencode[7]}}</text>
+      </view>
     </view>
     <view class="lotteryContainerSeperator"></view>
     <view class="lotteryItemContainer">
       <view class="lotteryItemTop">
         <text class="lotteryTypeText">双色球</text>
-        <text class="lotteryPeriodNumber">第2017047期</text>
+        <text class="lotteryPeriodNumber">第{{doubleColor.expect}}期</text>
         <text class="lotteryFollowStatus">已关注</text>
         <text class="lotteryDetailIcon">></text>
       </view>
-      <view class="lotteryItemButtom"></view>
+      <view class="lotteryItemButtom">
+        <text class="lotteryRedBall">{{doubleColor.opencode[0]}}</text>
+        <text class="lotteryRedBall">{{doubleColor.opencode[1]}}</text>
+        <text class="lotteryRedBall">{{doubleColor.opencode[2]}}</text>
+        <text class="lotteryRedBall">{{doubleColor.opencode[3]}}</text>
+        <text class="lotteryRedBall">{{doubleColor.opencode[4]}}</text>
+        <text class="lotteryRedBall">{{doubleColor.opencode[5]}}</text>
+        <text class="lotteryBlueBall">{{doubleColor.opencode[6]}}</text>
+      </view>
     </view>
     <view class="lotteryContainerSeperator"></view>
-    <view class="lotteryItemContainer">
-      <view class="lotteryItemTop">
-        <text class="lotteryTypeText">双色球</text>
-        <text class="lotteryPeriodNumber">第2017047期</text>
-        <text class="lotteryFollowStatus">已关注</text>
-        <text class="lotteryDetailIcon">></text>
-      </view>
-      <view class="lotteryItemButtom"></view>
-    </view>
-    <view class="lotteryContainerSeperator"></view>
-    <view class="lotteryItemContainer">
-      <view class="lotteryItemTop">
-        <text class="lotteryTypeText">双色球</text>
-        <text class="lotteryPeriodNumber">第2017047期</text>
-        <text class="lotteryFollowStatus">已关注</text>
-        <text class="lotteryDetailIcon">></text>
-      </view>
-      <view class="lotteryItemButtom"></view>
-    </view>
-    <view class="lotteryContainerSeperator"></view>
-    <view class="lotteryItemContainer">
-      <view class="lotteryItemTop">
-        <text class="lotteryTypeText">双色球</text>
-        <text class="lotteryPeriodNumber">第2017047期</text>
-        <text class="lotteryFollowStatus">已关注</text>
-        <text class="lotteryDetailIcon">></text>
-      </view>
-      <view class="lotteryItemButtom"></view>
-    </view>
   </swiper-item>
+
+
 
   <swiper-item>
     <view class="tabContainerSeperator"></view>
-     <view class="lotteryItemContainer">
+    <view class="lotteryItemContainer">
       <view class="lotteryItemTop">
-        <text class="lotteryTypeText">双色球</text>
-        <text class="lotteryPeriodNumber">第2017047期</text>
+        <text class="lotteryTypeText">超级大乐透</text>
+        <text class="lotteryPeriodNumber">第{{superLottery.expect}}期</text>
         <text class="lotteryFollowStatus">已关注</text>
         <text class="lotteryDetailIcon">></text>
       </view>
-      <view class="lotteryItemButtom"></view>
+      <view class="lotteryItemButtom">
+        <text class="lotteryRedBall">{{superLottery.opencode[0]}}</text>
+        <text class="lotteryRedBall">{{superLottery.opencode[1]}}</text>
+        <text class="lotteryRedBall">{{superLottery.opencode[2]}}</text>
+        <text class="lotteryRedBall">{{superLottery.opencode[3]}}</text>
+        <text class="lotteryRedBall">{{superLottery.opencode[4]}}</text>
+        <text class="lotteryBlueBall">{{superLottery.opencode[5]}}</text>
+        <text class="lotteryBlueBall">{{superLottery.opencode[6]}}</text>
+      </view>
     </view>
     <view class="lotteryContainerSeperator"></view>
     <view class="lotteryItemContainer">
       <view class="lotteryItemTop">
-        <text class="lotteryTypeText">双色球</text>
-        <text class="lotteryPeriodNumber">第2017047期</text>
+        <text class="lotteryTypeText">排列3</text>
+        <text class="lotteryPeriodNumber">第{{arrange3.expect}}期</text>
         <text class="lotteryFollowStatus">已关注</text>
-        <text class="lotteryDetailIcon">icon</text>
+        <text class="lotteryDetailIcon">></text>
       </view>
-      <view class="lotteryItemButtom"></view>
+      <view class="lotteryItemButtom">
+        <text class="lotteryRedBall">{{arrange3.opencode[0]}}</text>
+        <text class="lotteryRedBall">{{arrange3.opencode[1]}}</text>
+        <text class="lotteryRedBall">{{arrange3.opencode[2]}}</text>
+      </view>
     </view>
     <view class="lotteryContainerSeperator"></view>
     <view class="lotteryItemContainer">
       <view class="lotteryItemTop">
-        <text class="lotteryTypeText">双色球</text>
-        <text class="lotteryPeriodNumber">第2017047期</text>
+        <text class="lotteryTypeText">排列5</text>
+        <text class="lotteryPeriodNumber">第{{arrange5.expect}}期</text>
         <text class="lotteryFollowStatus">已关注</text>
-        <text class="lotteryDetailIcon">icon</text>
+        <text class="lotteryDetailIcon">></text>
       </view>
-      <view class="lotteryItemButtom"></view>
+      <view class="lotteryItemButtom">
+        <text class="lotteryRedBall">{{arrange5.opencode[0]}}</text>
+        <text class="lotteryRedBall">{{arrange5.opencode[1]}}</text>
+        <text class="lotteryRedBall">{{arrange5.opencode[2]}}</text>
+        <text class="lotteryRedBall">{{arrange5.opencode[3]}}</text>
+        <text class="lotteryRedBall">{{arrange5.opencode[4]}}</text>
+      </view>
     </view>
     <view class="lotteryContainerSeperator"></view>
     <view class="lotteryItemContainer">
       <view class="lotteryItemTop">
-        <text class="lotteryTypeText">双色球</text>
-        <text class="lotteryPeriodNumber">第2017047期</text>
+        <text class="lotteryTypeText">七星彩</text>
+        <text class="lotteryPeriodNumber">第{{sevenStar.expect}}期</text>
         <text class="lotteryFollowStatus">已关注</text>
-        <text class="lotteryDetailIcon">icon</text>
+        <text class="lotteryDetailIcon">></text>
       </view>
-      <view class="lotteryItemButtom"></view>
+      <view class="lotteryItemButtom">
+        <text class="lotteryRedBall">{{sevenStar.opencode[0]}}</text>
+        <text class="lotteryRedBall">{{sevenStar.opencode[1]}}</text>
+        <text class="lotteryRedBall">{{sevenStar.opencode[2]}}</text>
+        <text class="lotteryRedBall">{{sevenStar.opencode[3]}}</text>
+        <text class="lotteryRedBall">{{sevenStar.opencode[4]}}</text>
+        <text class="lotteryRedBall">{{sevenStar.opencode[5]}}</text>
+        <text class="lotteryRedBall">{{sevenStar.opencode[6]}}</text>
+      </view>
     </view>
     <view class="lotteryContainerSeperator"></view>
     <view class="lotteryItemContainer">
       <view class="lotteryItemTop">
-        <text class="lotteryTypeText">双色球</text>
-        <text class="lotteryPeriodNumber">第2017047期</text>
+        <text class="lotteryTypeText">六场半全场</text>
+        <text class="lotteryPeriodNumber">第{{sixAndHalf.expect}}期</text>
         <text class="lotteryFollowStatus">已关注</text>
-        <text class="lotteryDetailIcon">icon</text>
+        <text class="lotteryDetailIcon">></text>
       </view>
-      <view class="lotteryItemButtom"></view>
+      <view class="lotteryItemButtom">
+        <text class="lotteryYellowSquare">{{sixAndHalf.opencode[0]}}</text>
+        <text class="lotteryYellowSquare">{{sixAndHalf.opencode[1]}}</text>
+        <text class="lotteryYellowSquare">{{sixAndHalf.opencode[2]}}</text>
+        <text class="lotteryYellowSquare">{{sixAndHalf.opencode[3]}}</text>
+        <text class="lotteryYellowSquare">{{sixAndHalf.opencode[4]}}</text>
+        <text class="lotteryYellowSquare">{{sixAndHalf.opencode[5]}}</text>
+        <text class="lotteryYellowSquare">{{sixAndHalf.opencode[6]}}</text>
+        <text class="lotteryYellowSquare">{{sixAndHalf.opencode[7]}}</text>
+        <text class="lotteryYellowSquare">{{sixAndHalf.opencode[8]}}</text>
+        <text class="lotteryYellowSquare">{{sixAndHalf.opencode[9]}}</text>
+        <text class="lotteryYellowSquare">{{sixAndHalf.opencode[10]}}</text>
+        <text class="lotteryYellowSquare">{{sixAndHalf.opencode[11]}}</text>
+      </view>
+    </view>
+    <view class="lotteryContainerSeperator"></view>
+    <view class="lotteryItemContainer">
+      <view class="lotteryItemTop">
+        <text class="lotteryTypeText">四场进球彩</text>
+        <text class="lotteryPeriodNumber">第{{fourGoals.expect}}期</text>
+        <text class="lotteryFollowStatus">已关注</text>
+        <text class="lotteryDetailIcon">></text>
+      </view>
+      <view class="lotteryItemButtom">
+        <text class="lotteryYellowSquare">{{fourGoals.opencode[0]}}</text>
+        <text class="lotteryYellowSquare">{{fourGoals.opencode[1]}}</text>
+        <text class="lotteryYellowSquare">{{fourGoals.opencode[2]}}</text>
+        <text class="lotteryYellowSquare">{{fourGoals.opencode[3]}}</text>
+        <text class="lotteryYellowSquare">{{fourGoals.opencode[4]}}</text>
+        <text class="lotteryYellowSquare">{{fourGoals.opencode[5]}}</text>
+        <text class="lotteryYellowSquare">{{fourGoals.opencode[6]}}</text>
+        <text class="lotteryYellowSquare">{{fourGoals.opencode[7]}}</text>
+      </view>
+    </view>
+    <view class="lotteryContainerSeperator"></view>
+    <view class="lotteryItemContainer">
+      <view class="lotteryItemTop">
+        <text class="lotteryTypeText">十四场胜负彩（任9）</text>
+        <text class="lotteryPeriodNumber">第{{fourteenWinLose.expect}}期</text>
+        <text class="lotteryFollowStatus">已关注</text>
+        <text class="lotteryDetailIcon">></text>
+      </view>
+      <view class="lotteryItemButtom">
+        <text class="lotteryYellowSquare">{{fourteenWinLose.opencode[0]}}</text>
+        <text class="lotteryYellowSquare">{{fourteenWinLose.opencode[1]}}</text>
+        <text class="lotteryYellowSquare">{{fourteenWinLose.opencode[2]}}</text>
+        <text class="lotteryYellowSquare">{{fourteenWinLose.opencode[3]}}</text>
+        <text class="lotteryYellowSquare">{{fourteenWinLose.opencode[4]}}</text>
+        <text class="lotteryYellowSquare">{{fourteenWinLose.opencode[5]}}</text>
+        <text class="lotteryYellowSquare">{{fourteenWinLose.opencode[6]}}</text>
+        <text class="lotteryYellowSquare">{{fourteenWinLose.opencode[7]}}</text>
+        <text class="lotteryYellowSquare">{{fourteenWinLose.opencode[8]}}</text>
+        <text class="lotteryYellowSquare">{{fourteenWinLose.opencode[9]}}</text>
+        <text class="lotteryYellowSquare">{{fourteenWinLose.opencode[10]}}</text>
+        <text class="lotteryYellowSquare">{{fourteenWinLose.opencode[11]}}</text>
+        <text class="lotteryYellowSquare">{{fourteenWinLose.opencode[10]}}</text>
+        <text class="lotteryYellowSquare">{{fourteenWinLose.opencode[11]}}</text>
+      </view>
     </view>
   </swiper-item>
 </swiper>
